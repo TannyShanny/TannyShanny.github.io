@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'PlayFair-Display';
+  font-size: 14px;
+  line-height: 1.72;
+  color: #626262;
+}
+
+.container {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 15;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list {
+  text-align: center;
+  text-transform: uppercase;
+  color: #626262;
+  margin-top: 77px;
+  margin-bottom: 104px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav-item {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.nav-item + .nav-item {
+  padding-left: 15px;
+}
+
+.nav-link {
+  color: inherit;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: #03a9f4;
+}
+
+.cards {
+  letter-spacing: -0.34em;
+  margin: 0 -30px;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  padding: 0 30px 30px;
+  letter-spacing: 0;
+}
+
+.card .category-link {
+  color: #b4ad9e;
+  text-transform: uppercase;
+}
+
+.card-img {
+  margin-bottom: 30px;
+}
+
+.card h2 {
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.card h2 a {
+  color: inherit;
+}
+
+.button {
+	background-color:#ffffff;
+	border: 1px solid #626262;
+  display: inline-block;
+  text-align: center;
+  color: #626262;
+  font-family: 'PlayFair-Display';
+	font-size: 20px;
+	padding: 26px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+	background-color:#ffffff;
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+}
