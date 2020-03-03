@@ -2,9 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap');
-
 *,
 ::before,
 ::after {
@@ -22,16 +19,23 @@ a {
 }
 
 body {
-  font-family: 'PlayFair-Display';
+  font-family: 'PlayFair Display';
   font-size: 14px;
   line-height: 1.72;
   color: #626262;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 930px;
   margin: 0 auto;
-  padding: 0 15;
+  padding: 0 15px;
 }
 
 ul,
@@ -45,20 +49,21 @@ ol {
   text-align: center;
   text-transform: uppercase;
   color: #626262;
-  margin-top: 77px;
-  margin-bottom: 104px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-top: 72px;
+  margin-bottom: 98px;
 }
 
 .nav-item {
   display: inline-block;
   vertical-align: middle;
-
 }
 
 .nav-item + .nav-item {
   padding-left: 15px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 100px;
 }
 
 .nav-link {
@@ -82,15 +87,19 @@ ol {
   width: 50%;
   padding: 0 30px 30px;
   letter-spacing: 0;
+  margin-bottom: 100px;
 }
 
 .card .category-link {
+  font-family: 'Ubuntu';
   color: #b4ad9e;
   text-transform: uppercase;
 }
 
 .card-img {
   margin-bottom: 30px;
+  width: 420px;
+  height: auto;
 }
 
 .card h2 {
@@ -103,16 +112,17 @@ ol {
 }
 
 .button {
-	background-color:#ffffff;
+  line-height: 1;
+  display: block;
 	border: 1px solid #626262;
-  display: inline-block;
-  text-align: center;
+  background-color: #ffffff;
   color: #626262;
-  font-family: 'PlayFair-Display';
+  font-family: 'PlayFair Display';
 	font-size: 20px;
 	padding: 26px 16px;
   text-decoration: none;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .button:hover {
