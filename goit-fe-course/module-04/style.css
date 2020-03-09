@@ -164,8 +164,12 @@ h2::after {
     background-color: #1abc9c;
 }
 
-.product-item-image:hover .product-item-name .product-item-price {
+.product-item:hover .product-item-name {
+    background-color: #1abc9c;
+}
 
+.product-item:hover .product-item-price {
+    background-color: #7fd9c7;
 }
 
 .product-item-price {
