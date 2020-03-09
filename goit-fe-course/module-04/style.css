@@ -1,0 +1,268 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.header {
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
+
+.header-container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* SITE LOGO */
+.site-logo {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-left: 30px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.site-logo::first-letter {
+    color: #1abc9c;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+.site-logo a {
+    color: #555252;
+}
+
+/* SITE NAVIGATION */
+.site-navigation {
+    float: right;
+    width: 490px;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #000;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+.site-navigation li {
+    float: left;
+}
+
+.site-navigation a {
+    color: #000;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-link:hover {
+    color: #1abc9c;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    max-width: 1170px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: 900;
+    color: #515151;
+    text-transform: uppercase;
+}
+
+h2::after {
+    display: block;
+    position: inherit;
+    content: '';
+}
+
+/* FEATURED PRODUCTS */
+.featured-products {
+    width: 1140px;
+    margin: 0 15px;
+}
+
+.container-products-name {
+    margin-bottom: 131px;
+}
+
+.container-products-name::after {
+    display: block;
+    width: 162px;
+    border-bottom: 8px solid #1abc9c;
+    content: '';
+    margin-top: 32px;
+    position: absolute;
+    left: 50%;
+    margin-left: -81px;
+}
+
+.product-item {
+    float: left;
+    margin: 0 14px 30px; 
+}
+
+.product-item-name {
+    margin: 0 auto;
+    width: 201px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #515151;
+    float: left;
+    padding-left: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.product-item-name:hover {
+    background-color: #1abc9c;
+}
+
+.product-item-image:hover .product-item-name .product-item-price {
+
+}
+
+.product-item-price {
+    float: left;
+    margin: 0 auto;
+    width: 54px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+    background-color: #8c8c8c;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-item-price:hover {
+    background-color: #7fd9c7;
+}
+
+.product-item-price::before {
+    content: '\0024';
+}
+
+
+/* LATEST NEWS */
+.container-news {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.latest-news {
+    width: 1140px;
+    margin: 0 15px;
+}
+
+.latest-news-name {
+    margin-bottom: 131px;
+}
+
+.latest-news-name::after {
+    display: block;
+    width: 162px;
+    border-bottom: 8px solid #1abc9c;
+    content: '';
+    margin-top: 32px;
+    position: absolute;
+    left: 50%;
+    margin-left: -81px;
+}
+
+.news-item {
+    float: left;
+    margin: 0 14px 30px;
+    width: 350px;
+}
+
+.news-item-name {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    color: #555252;
+    margin: 16px 0 50px 0;
+}
+
+.news-item-name::after {
+    display: block;
+    width: 136px;
+    border-bottom: 3px solid #1abc9c;
+    content: '';
+    margin-top: 15px;
+    position: absolute;
+}
+
+.news-item-description {
+    line-height: 18px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #555252;
+    margin-bottom: 17px;
+    padding-right: 15px;
+}
+
+.button-news {
+    width: 160px;
+    height: 50px;
+    background-color: #4ec6ab;
+    text-transform: capitalize;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 45px;
+}
