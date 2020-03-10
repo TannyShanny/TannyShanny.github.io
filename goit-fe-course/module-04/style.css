@@ -20,7 +20,6 @@ img {
     margin: 0 auto;
 }
 
-
 .container {
     max-width: 1170px;
     padding: 0 15px;
@@ -98,6 +97,10 @@ ol {
 }
 
 /* MAIN CONTENT */
+.products {
+    padding-bottom: 104px;
+}
+
 
 h2 {
     overflow: hidden;
@@ -217,7 +220,6 @@ h2::after {
 /* LATEST NEWS */
 
 .latest-news {
-    width: 1140px;
     margin: 0 15px;
 }
 
