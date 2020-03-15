@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.wrapper {
+    max-width: 1110px;
+    padding: 0 0;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 37px;
+    padding-bottom: 32px;
+}
+
+/* SITE LOGO */
+.site-logo {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-left: 15px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.site-logo::first-letter {
+    color: #1abc9c;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+.site-logo a {
+    color: #555252;
+}
+
+/* SITE NAVIGATION */
+.site-navigation {
+    overflow: hidden;
+    float: right;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #000;
+    padding-right: 15px;
+    padding-top: 8px;
+}
+
+.site-navigation li {
+    float: left;
+}
+
+.site-navigation a {
+    color: #000;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-link:hover {
+    color: #1abc9c;
+}
+
+.slider {
+    position: relative;
+    height: 585px;
+    background: url(/img/slider.png) no-repeat;
+    background-size: contain;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    background: #000;
+    height: 585px;
+    width: 100%;
+    left: 0;
+    opacity: 0.522;
+    z-index: 1;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 60px;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    padding-top: 220px;
+    margin: 0 auto;
+}
+
+.text {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    z-index: 2;
+    left: 0;
+    transform: translateX(50%);
+}
