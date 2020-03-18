@@ -41,7 +41,7 @@ img {
     clear: both;
 }
 
-.wrapper {
+.header {
     max-width: 1110px;
     margin: 0 auto;
 }
@@ -88,7 +88,7 @@ button {
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'Open Sans';
-    font-weight: 700;
+    font-weight: bold;
     color: #000;
     padding-right: 15px;
     padding-top: 8px;
@@ -199,9 +199,7 @@ button {
 
 .collection {
     background-color: #e9f0fd;
-    background-size: 100%;
     padding-bottom: 100px;
-    position: absolute;
     width: 100vw;
     left: 0;
 }
@@ -249,8 +247,7 @@ button {
 
 .item-overlay {
     display: none;
-    background-color: #000;
-    opacity: 0.5;
+    opacity: 0.7;
     position: absolute;
     left: 0;
     right: 0;
@@ -258,8 +255,8 @@ button {
     bottom: 0;
     width: 235px;
     height: 260px;
-    color: #000;
     margin: 10px 10px;
+    background-color: #000;
 }
 
 .item:hover .item-overlay {
@@ -270,50 +267,56 @@ button {
     opacity: 0.5;
 }
 
+.icons {
+    text-align: center;
+    padding-top: 78px;
+}
+
 .icon-1 {
     font-family: 'pe-icon-7-stroke';
     font-size: 30px;
-    position: absolute;
     border: 1px solid #fff;
     background-color: #000;
     color: #fff;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
-    
+    width: 48px;
+    height: 48px;
+    margin-bottom: 7px;
+    margin-right: 7px;
+}
+
+.icon-1:hover {
+    background-color: rgba(26, 188, 156, 1);
 }
 
 .icon-2 {
     font-family: 'pe-icon-7-stroke';
     font-size: 30px;
-    position: absolute;
     border: 1px solid #fff;
     background-color: #000;
     color: #fff;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 7px;
+    margin-right: 7px;
+}
+
+.icon-2:hover {
+    background-color: rgba(26, 188, 156, 1);
 }
 
 .icon-3 {
     font-family: 'pe-icon-7-stroke';
     font-size: 30px;
-    position: absolute;
     border: 1px solid #fff;
     background-color: #000;
     color: #fff;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 7px;
+}
+
+.icon-3:hover {
+    background-color: rgba(26, 188, 156, 1);
 }
 
 .icon-4 {
@@ -323,16 +326,16 @@ button {
     border: 1px solid #fff;
     background-color: #000;
     color: #fff;
-    width: 165px;
+    width: 166px;
     height: 50px;
     font-size: 14px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
 }
 
-.icon-4::before {
+.icon-4:hover {
+    background-color: rgba(50, 50, 50, 1);
+}
+
+.icon-4:before {
     content: '';
     border: none;
     font-family: 'pe-icon-7-stroke';
@@ -393,6 +396,27 @@ button {
 }
 
 .footer {
-    display: inline;
+    text-align: center;
+    padding-top: 37px;
 }
 
+.footer-container {
+    background-color: #323232;
+    height: 88px;
+    color: #fff;
+}
+
+.copywright {
+    margin: 0 auto;
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+.author {
+    margin: 0 auto;
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #46bfa9;
+}
