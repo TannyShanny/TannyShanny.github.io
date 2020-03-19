@@ -328,26 +328,22 @@ button {
     width: 166px;
     height: 50px;
     font-size: 14px;
-    padding-bottom: 15px;
-    padding-right: 17px;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .icon-4 i {
     font-size: 30px;
     padding-right: 20px;
     padding-bottom: 0;
+    margin-right: 4px;
 }
 
 .icon-4:hover {
     background-color: rgba(50, 50, 50, 1);
-}
-
-.icon-4:before {
-    content: '';
-    border: none;
-    font-family: 'pe-icon-7-stroke';
-    font-size: 30px;
-    color: #fff;
 }
 
 .item-name {
