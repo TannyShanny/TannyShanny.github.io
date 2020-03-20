@@ -6,12 +6,13 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body
 {
-  width: 100%;
-  max-width: 100%;
+  width: 1600px;
   overflow-x: hidden;
 }
 
@@ -41,7 +42,7 @@ img {
     clear: both;
 }
 
-.header {
+#header {
     max-width: 1110px;
     margin: 0 auto;
 }
@@ -113,18 +114,16 @@ button {
 .slider {
     position: relative;
     height: 600px;
-    width: 1600px;
+    width: 100%;
     background: url(./img/slider.png) no-repeat;
     background-size: inherit;
-    margin-left: calc(-50vw + 50%);
 }
 
 .slider::before {
     content: '';
     position: absolute;
-    background: #000;
+    background: rgba(0, 0, 0, .522);
     z-index: 0;
-    opacity: 0.522;
     top: 0;
     bottom: 0;
     right: 0;
@@ -200,8 +199,6 @@ button {
 .collection {
     background-color: #e9f0fd;
     padding-bottom: 100px;
-    width: 100vw;
-    left: 0;
 }
 
 .new-collection {
@@ -229,14 +226,13 @@ button {
 }
 
 .cards {
-    width: 1110px;
     margin: 0 auto;
     overflow: hidden;
+    text-align: center;
 }
 
 .item {
-    float: left;
-    width: 255px;
+    display: inline-block;
     margin-right: 30px;
     position: relative;
 }
