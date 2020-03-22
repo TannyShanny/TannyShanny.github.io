@@ -12,7 +12,7 @@ html {
 
 body
 {
-  width: 1920px;
+  max-width: 1920px;
   overflow-x: hidden;
 }
 
