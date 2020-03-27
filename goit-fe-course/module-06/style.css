@@ -395,6 +395,7 @@ button {
 }
 
 .team-name {
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 16px;
     font-family: 'Montserrat';
@@ -405,6 +406,7 @@ button {
 }
 
 .position {
+    text-align: center;
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 15px;
@@ -422,7 +424,7 @@ button {
     margin-right: auto;
 }
 
-#footer {
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -437,6 +439,10 @@ button {
     font-weight: 400;
     color: #333333;
     font-size: 14px;
+}
+
+.copywright {
+    display: flex;
 }
 
 .copywright a {
