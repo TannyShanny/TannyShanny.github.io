@@ -12,8 +12,11 @@ html {
 
 body
 {
-  width: 1600px;
   overflow-x: hidden;
+}
+
+#wrapper {
+    margin: 0 auto;
 }
 
 a {
