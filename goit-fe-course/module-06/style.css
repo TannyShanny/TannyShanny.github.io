@@ -53,10 +53,7 @@ button {
 
 .nav {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-    margin: 0 auto;
+    justify-content: space-between;
  }
 
 .logo {
@@ -68,9 +65,6 @@ button {
 
 .menu {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: flex-end;
 }
 
 .menu-item {
@@ -136,8 +130,59 @@ button {
     margin-bottom: 65px;
 }
 
-.item-services {
-    width: 383px;
+.item-1 {
+    width: 380px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+.item-2 {
+    width: 380px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+.item-3 {
+    width: 380px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+
+.item-4 {
+    width: 380px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+.item-5 {
+    width: 380px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+.item-6 {
+    width: 380px;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -147,22 +192,18 @@ button {
 }
 
 .items-services {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: start;
 }
 
-.item-services:nth-child(3) {
+.item:nth-child(3) {
     margin-right: 0;
 }
 
-.item-services:nth-child(6) {
+.item:nth-child(6) {
     margin-right: 0;
-}
-
-.item-description {
-    padding-left: 80px;
 }
 
 .item-img {
@@ -191,13 +232,14 @@ button {
     text-transform: uppercase;
     color: #333333;
     padding-bottom: 20px;
+    padding-left: 29px;
 }
 
 .item-description {
     font-family: 'Roboto';
     font-weight: 400;
     color: #999999;
-    padding-left: 63px;
+    padding-left: 61px;
 }
 
 .item-1 {
@@ -206,8 +248,7 @@ button {
 
 .item-1::before {
     content: url(./img/1-photography.png);
-    margin-left: auto;
-    margin-right: 29px;
+    margin: 0;
 }
 
 .item-2 {
@@ -216,8 +257,7 @@ button {
 
 .item-2::before {
     content: url(./img/2-web-design.png);
-    margin-left: auto;
-    margin-right: 29px;
+    margin: 0;
 }
 
 .item-3 {
@@ -226,8 +266,7 @@ button {
 
 .item-3::before {
     content: url(./img/3-creativity.png);
-    margin-left: auto;
-    margin-right: 29px;
+    margin: 0;
 }
 
 .item-4 {
@@ -236,8 +275,7 @@ button {
 
 .item-4::before {
     content: url(./img/4-seo.png);
-    margin-left: auto;
-    margin-right: 29px;
+    margin: 0;
 }
 
 .item-5 {
@@ -246,8 +284,7 @@ button {
 
 .item-5::before {
     content: url(./img/5-css.png);
-    margin-left: auto;
-    margin-right: 29px;
+    margin: 0;
 }
 
 .item-6 {
@@ -256,8 +293,7 @@ button {
 
 .item-6::before {
     content: url(./img/6-digital.png);
-    margin-left: auto;
-    margin-right: 29px;
+    margin: 0;
 }
 
 .team {
@@ -298,10 +334,10 @@ button {
 
 .item-team {
     padding-bottom: 84px;
+    width: 380px;+
 }
 
 .item-img {
-    transition-property: left top box-shadow;
     transition-duration: .5s;
     position: relative;
     margin: 0 auto;
