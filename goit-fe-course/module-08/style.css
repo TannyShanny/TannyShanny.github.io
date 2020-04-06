@@ -49,6 +49,7 @@ a {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    height: 140px;
 }
 
 .logo {
@@ -76,13 +77,9 @@ a {
 .user-item {
     display: inline-block;
     vertical-align: middle;
-}
-
-.user-item {
+    padding: 10px 15px;
     border: 2px solid #fff transparent;
     border-radius: 20px;
-    padding: 9px 15px;
-    
 }
 
 .user-item:hover,
@@ -118,6 +115,7 @@ h2 {
     margin: 0 auto;
     top: 229px;
     text-align: center;
+    width: 100%;
 }
 
 .banner-description {
@@ -360,6 +358,7 @@ h3 {
     }
 
     .banner-info {
+        width: 100%;
         margin: 0 auto;
         z-index: 2;
     }
