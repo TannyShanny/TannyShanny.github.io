@@ -1,0 +1,93 @@
+.team__description {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: $main-text-size;
+    color: $grey-light-color;
+    text-align: center;
+}
+
+.team__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 83px;
+}
+
+.team__card {
+    width: 380px;
+    margin: 0;
+}
+
+.team__overlay {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(252,227,138,.90) 0%, rgb(243,129,129) 100%);
+}
+
+.team__card:hover .team__overlay {
+    opacity: 1;
+    display: block;
+}
+
+.team__img {
+    width: 380px;
+    height: auto;
+    top: 0;
+    left: 0;
+    transition-duration: .5s;
+    position: relative;
+    margin: 0 auto;
+}
+
+.team__img:hover {
+    left: -10px;
+    top: -10px;
+    box-shadow: 11px 11px 0 0 #95e1d3;
+}
+
+.team__buttons {
+    @include center-flex('hor');
+    margin-top: 207px;
+}
+
+.team__button {
+    fill: $primary-rose-color;
+    background-color: $primary-yellow-color;
+    width: 56px;
+    height: 56px;
+    padding: 15px;
+    margin-right: 1px;
+}
+
+.team__button:hover {
+    fill: $primary-white-color;
+    background-color: $primary-rose-color;
+}
+
+.team__name {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 16px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $grey-dark-color;
+    text-align: center;
+}
+
+.team__position {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: $main-text-size;
+    color: $grey-light-color;
+    text-align: center;
+}

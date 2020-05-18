@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: $main-font-stack;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+::placeholder {
+  padding-left: 12px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 15px;
+  color: $grey-superlight-color;
+}

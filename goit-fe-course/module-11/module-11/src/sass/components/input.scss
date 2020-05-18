@@ -1,0 +1,14 @@
+input {
+    border: 1px solid $grey-superlight-color;
+
+    &[type=submit] {
+        background-color: $primary-blue-color;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $primary-white-color;
+        padding: 15px 34px;
+        line-height: 10px;
+    }
+}

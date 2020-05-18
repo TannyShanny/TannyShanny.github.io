@@ -1,0 +1,25 @@
+.footer::before {
+    @include pseudo($display: block);
+    width: 100%;
+    border-top: 1px solid $grey-superlight-color;
+    left: 50%;
+    margin: 0 auto;
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.footer__copywright {
+    @extend %link;
+    padding-right: 5px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: $grey-dark-color;
+    font-size: 14px;
+}

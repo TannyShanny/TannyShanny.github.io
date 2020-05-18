@@ -1,0 +1,24 @@
+.icons {
+    @extend %list;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons__item {
+    margin-right: 55px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.icons__link {
+    @extend %link;
+
+    fill: #fff;
+
+    &:hover {
+        fill: $primary-yellow-color;
+    }
+}

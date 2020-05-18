@@ -1,0 +1,11 @@
+.logo {
+    z-index: 1;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo__link {
+    @extend %link;
+    color: $primary-white-color;
+}

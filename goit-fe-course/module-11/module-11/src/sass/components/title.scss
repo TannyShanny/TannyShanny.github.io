@@ -1,0 +1,29 @@
+.title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title--1 {
+    font-family: 'Kaushan Script';
+    font-weight: 400;
+    font-size: 24px;
+    color: $grey-dark-color;
+    margin-bottom: 22px;
+}
+
+.title--2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+    color: $grey-dark-color;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+}
+
+.title--2::after {
+    @include pseudo($display: block);
+    border-bottom: 3px solid $primary-rose-color;
+    width: 60px;
+    margin: 0 auto;
+    padding-top: 43px;
+}

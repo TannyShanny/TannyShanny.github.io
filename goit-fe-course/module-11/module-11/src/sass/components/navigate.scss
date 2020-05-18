@@ -1,0 +1,41 @@
+.navigate {
+    @extend %list;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigate__item {
+    margin-right: 55px;
+}
+
+.navigate__item::after {
+    @include pseudo($display: none);
+    width: 100%;
+    border-bottom: 3px solid $primary-yellow-color;
+    padding-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.navigate__item:hover {
+    color: $primary-yellow-color;
+}
+
+.navigate__item:hover::after {
+    @include pseudo($display: block);
+    // display: block;
+}
+
+.navigate__link {
+    @extend %link;
+    color: $primary-white-color;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.navigate__link:hover {
+    color: $primary-yellow-color;
+}
